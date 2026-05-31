@@ -62,7 +62,7 @@
 
     .nav {
       width: min(1180px, calc(100% - 36px));
-      min-height: 92px;
+      min-height: 132px;
       margin: 0 auto;
       display: flex;
       align-items: center;
@@ -73,53 +73,17 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 13px;
       min-width: 0;
       color: var(--navy);
       font-weight: 800;
     }
 
     .logo-mark {
-      width: 58px;
-      height: 58px;
-      display: grid;
-      place-items: center;
+      width: min(300px, 42vw);
+      height: 106px;
+      display: block;
       flex: 0 0 auto;
-      border: 3px solid var(--blue);
-      color: var(--blue);
-      font-size: 1.65rem;
-      font-weight: 900;
-      letter-spacing: 0;
-      position: relative;
-    }
-
-    .logo-mark::after {
-      content: "";
-      position: absolute;
-      right: -8px;
-      bottom: 8px;
-      width: 14px;
-      height: 28px;
-      background: var(--orange);
-    }
-
-    .logo-text {
-      display: grid;
-      gap: 1px;
-    }
-
-    .logo-text strong {
-      font-size: clamp(1.38rem, 3vw, 2rem);
-      line-height: 1;
-      letter-spacing: 0.01em;
-    }
-
-    .logo-text span {
-      color: var(--muted);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
+      object-fit: contain;
     }
 
     .menu {
@@ -436,7 +400,7 @@
 
     @media (max-width: 920px) {
       .nav {
-        min-height: 80px;
+        min-height: 112px;
       }
 
       .menu {
@@ -480,13 +444,8 @@
       }
 
       .logo-mark {
-        width: 48px;
-        height: 48px;
-        font-size: 1.35rem;
-      }
-
-      .logo-text span {
-        font-size: 0.66rem;
+        width: min(230px, 62vw);
+        height: 88px;
       }
 
       .hero-inner,
@@ -532,11 +491,7 @@
   <header>
     <nav class="nav" aria-label="Main navigation">
       <a class="logo" href="#" aria-label="Moteng CPA home">
-        <span class="logo-mark">M</span>
-        <span class="logo-text">
-          <strong>Moteng CPA</strong>
-          <span>Accounting & Advisory</span>
-        </span>
+        <img class="logo-mark" src="logo.jpeg" alt="Moteng CPA logo">
       </a>
       <div class="menu">
         <a href="#">Home</a>
