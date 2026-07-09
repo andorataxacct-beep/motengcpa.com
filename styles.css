@@ -69,8 +69,8 @@ header {
 }
 
 .logo-mark {
-  width: min(300px, 42vw);
-  height: 106px;
+  width: min(390px, 40vw);
+  height: 96px;
   display: block;
   flex: 0 0 auto;
   object-fit: contain;
@@ -672,8 +672,8 @@ footer {
   }
 
   .logo-mark {
-    width: min(230px, 62vw);
-    height: 88px;
+    width: min(280px, 68vw);
+    height: 64px;
   }
 
   .page-hero .hero-inner {
