@@ -418,7 +418,7 @@ h3 {
 .service-media-page .content-band .section-inner > .actions,
 .service-media-page .content-band .section-inner > .media-content {
   width: min(600px, calc(100% - 112px));
-  justify-self: end;
+  justify-self: start;
 }
 
 .service-media-page .content-band.media-left .section-inner > p,
@@ -426,7 +426,7 @@ h3 {
 .service-media-page .content-band.media-left .section-inner > ul,
 .service-media-page .content-band.media-left .section-inner > .actions,
 .service-media-page .content-band.media-left .section-inner > .media-content {
-  justify-self: start;
+  justify-self: end;
 }
 
 .service-media-page .content-band .section-inner > .media-content {
@@ -627,6 +627,10 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   padding: 0 0 76px;
+}
+
+.service-media-page .content-band.media-left .registration-grid {
+  justify-self: end;
 }
 
 .registration-grid div {
