@@ -224,6 +224,21 @@ header {
     var(--hero-image) center right / cover no-repeat;
 }
 
+.construction-service-page .construction-service-hero {
+  min-height: 560px;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.9) 45%, rgba(255, 255, 255, 0.28) 100%),
+    var(--hero-image) center right / cover no-repeat;
+}
+
+.construction-service-page .hero-content {
+  width: min(760px, 100%);
+}
+
+.construction-service-page .hero-content .actions {
+  margin-top: 30px;
+}
+
 .hero-inner,
 .section-inner,
 .cta-inner,
@@ -299,6 +314,44 @@ h3 {
 
 .content-band.soft {
   background: var(--soft);
+}
+
+.construction-service-page .section-inner {
+  width: min(1040px, calc(100% - 36px));
+}
+
+.construction-service-page .content-band {
+  padding: 78px 0;
+}
+
+.construction-service-page .content-band .section-inner > ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  margin: 26px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.construction-service-page .content-band .section-inner > ul li {
+  padding: 14px 16px;
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 22px rgba(43, 23, 79, 0.05);
+}
+
+.construction-service-page .content-band:not(.soft) .section-inner > ul li {
+  background: var(--soft);
+}
+
+.construction-service-page .content-band .section-inner > ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 10px;
+  background: var(--orange);
 }
 
 .split {
@@ -655,6 +708,17 @@ footer {
     background:
       linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.84) 100%),
       var(--hero-image) center / cover no-repeat;
+  }
+
+  .construction-service-page .construction-service-hero {
+    min-height: auto;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.84) 100%),
+      var(--hero-image) center / cover no-repeat;
+  }
+
+  .construction-service-page .content-band .section-inner > ul {
+    grid-template-columns: 1fr;
   }
 
   .split,
