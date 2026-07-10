@@ -415,7 +415,8 @@ h3 {
 .service-media-page .content-band .section-inner > p,
 .service-media-page .content-band .section-inner > h2,
 .service-media-page .content-band .section-inner > ul,
-.service-media-page .content-band .section-inner > .actions {
+.service-media-page .content-band .section-inner > .actions,
+.service-media-page .content-band .section-inner > .media-content {
   width: min(600px, calc(100% - 112px));
   justify-self: end;
 }
@@ -423,8 +424,18 @@ h3 {
 .service-media-page .content-band.media-left .section-inner > p,
 .service-media-page .content-band.media-left .section-inner > h2,
 .service-media-page .content-band.media-left .section-inner > ul,
-.service-media-page .content-band.media-left .section-inner > .actions {
+.service-media-page .content-band.media-left .section-inner > .actions,
+.service-media-page .content-band.media-left .section-inner > .media-content {
   justify-self: start;
+}
+
+.service-media-page .content-band .section-inner > .media-content {
+  align-self: center;
+  padding: 76px 0;
+}
+
+.service-media-page .content-band .section-inner > .media-content > :first-child {
+  margin-top: 0;
 }
 
 .service-media-page .content-band .section-inner > p:first-child,
@@ -876,6 +887,7 @@ footer {
   .service-media-page .content-band .section-inner > h2,
   .service-media-page .content-band .section-inner > ul,
   .service-media-page .content-band .section-inner > .actions,
+  .service-media-page .content-band .section-inner > .media-content,
   .service-copy,
   .registration-grid {
     width: min(600px, calc(100% - 72px));
@@ -984,12 +996,18 @@ footer {
   .service-media-page .content-band .section-inner > h2,
   .service-media-page .content-band .section-inner > ul,
   .service-media-page .content-band .section-inner > .actions,
+  .service-media-page .content-band .section-inner > .media-content,
   .service-media-page .content-band.media-left .section-inner > p,
   .service-media-page .content-band.media-left .section-inner > h2,
   .service-media-page .content-band.media-left .section-inner > ul,
-  .service-media-page .content-band.media-left .section-inner > .actions {
+  .service-media-page .content-band.media-left .section-inner > .actions,
+  .service-media-page .content-band.media-left .section-inner > .media-content {
     width: min(100% - 36px, 680px);
     justify-self: center;
+  }
+
+  .service-media-page .content-band .section-inner > .media-content {
+    padding: 52px 0;
   }
 
   .registration-grid {
