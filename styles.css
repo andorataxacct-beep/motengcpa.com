@@ -598,6 +598,14 @@ h3 {
   line-height: 1.45;
 }
 
+.inline-link {
+  color: var(--blue-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+  text-underline-offset: 3px;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
