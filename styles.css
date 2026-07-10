@@ -413,7 +413,7 @@ h3 {
 .service-media-page .content-band .section-inner > h2,
 .service-media-page .content-band .section-inner > ul,
 .service-media-page .content-band .section-inner > .actions {
-  width: min(640px, calc(100% - 48px));
+  width: min(600px, calc(100% - 112px));
   justify-self: end;
 }
 
@@ -471,7 +471,7 @@ h3 {
 }
 
 .service-copy {
-  width: min(640px, calc(100% - 48px));
+  width: min(600px, calc(100% - 112px));
   justify-self: end;
   align-self: center;
   padding: 76px 0;
@@ -607,7 +607,7 @@ h3 {
 }
 
 .registration-grid {
-  width: min(640px, calc(100% - 48px));
+  width: min(600px, calc(100% - 112px));
   justify-self: start;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -866,6 +866,17 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+}
+
+@media (max-width: 1060px) {
+  .service-media-page .content-band .section-inner > p,
+  .service-media-page .content-band .section-inner > h2,
+  .service-media-page .content-band .section-inner > ul,
+  .service-media-page .content-band .section-inner > .actions,
+  .service-copy,
+  .registration-grid {
+    width: min(600px, calc(100% - 72px));
+  }
 }
 
 @media (max-width: 920px) {
