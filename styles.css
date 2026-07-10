@@ -606,6 +606,40 @@ h3 {
   text-underline-offset: 3px;
 }
 
+.registration-grid {
+  width: min(640px, calc(100% - 48px));
+  justify-self: start;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0 0 76px;
+}
+
+.registration-grid div {
+  padding: 16px;
+  background: var(--white);
+  border: 1px solid rgba(109, 63, 194, 0.16);
+  border-left: 4px solid var(--orange);
+  box-shadow: 0 10px 22px rgba(43, 23, 79, 0.05);
+}
+
+.registration-grid strong,
+.registration-grid span {
+  display: block;
+}
+
+.registration-grid strong {
+  color: var(--navy);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.registration-grid span {
+  margin-top: 5px;
+  color: var(--muted);
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -942,6 +976,13 @@ footer {
   .service-media-page .content-band.media-left .section-inner > .actions {
     width: min(100% - 36px, 680px);
     justify-self: center;
+  }
+
+  .registration-grid {
+    width: min(100% - 36px, 680px);
+    grid-template-columns: 1fr;
+    justify-self: center;
+    padding-bottom: 52px;
   }
 
   .service-media-page .content-band .section-inner > p:first-child,
