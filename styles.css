@@ -54,7 +54,7 @@ header {
 
 .nav {
   width: min(1180px, calc(100% - 36px));
-  min-height: 148px;
+  min-height: 124px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -66,13 +66,13 @@ header {
   display: flex;
   align-items: center;
   min-width: 0;
-  padding: 10px 0;
+  padding: 8px 0;
 }
 
 .logo-mark {
-  width: min(430px, 42vw);
+  width: min(360px, 34vw);
   height: auto;
-  max-height: 112px;
+  max-height: 88px;
   display: block;
   flex: 0 0 auto;
   object-fit: contain;
@@ -896,7 +896,7 @@ footer {
 
 @media (max-width: 920px) {
   .nav {
-    min-height: 112px;
+    min-height: 98px;
     position: relative;
   }
 
@@ -1056,9 +1056,9 @@ footer {
   }
 
   .logo-mark {
-    width: min(280px, 68vw);
+    width: min(240px, 64vw);
     height: auto;
-    max-height: 72px;
+    max-height: 58px;
   }
 
   .page-hero .hero-inner {
