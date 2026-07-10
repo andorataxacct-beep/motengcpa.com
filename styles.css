@@ -349,6 +349,19 @@ h3 {
   border-color: var(--blue);
 }
 
+.cta-text-link {
+  display: inline-block;
+  max-width: 760px;
+  padding: 18px 22px;
+  border-radius: 3px;
+  color: var(--white);
+  background: var(--orange);
+  box-shadow: 0 12px 28px rgba(242, 139, 32, 0.28);
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .actions {
   display: flex;
   flex-wrap: wrap;
