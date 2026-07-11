@@ -96,8 +96,9 @@
       min-width: 315px;
       display: none;
       position: absolute;
-      top: calc(100% + 10px);
+      top: 100%;
       left: 0;
+      margin-top: 0;
       padding: 10px;
       background: var(--white);
       border: 1px solid var(--line);
@@ -111,7 +112,8 @@
       text-align: left;
     }
     .dropdown:hover .dropdown-menu,
-    .dropdown:focus-within .dropdown-menu { display: grid; }
+    .dropdown:focus-within .dropdown-menu,
+    .dropdown.dropdown-open .dropdown-menu { display: grid; }
 
     .portal-link { padding-inline: 12px !important; border: 1px solid var(--line); }
     .book-link {
@@ -496,6 +498,6 @@
       <div class="copyright">&copy; 2026 Moteng CPA | Inspired by the Andora Consulting website structure</div>
     </div>
   </footer>
-  <script src="site.js"></script>
+  <script src="site.js?v=20260711a"></script>
 </body>
 </html>
