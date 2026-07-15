@@ -889,8 +889,35 @@ footer {
 
 .footer-inner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 20px;
+}
+
+.footer-memberships {
+  display: grid;
+  gap: 8px;
+  justify-items: center;
+  padding-top: 2px;
+  color: #d8e4ef;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.footer-memberships a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-memberships img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 1060px) {
